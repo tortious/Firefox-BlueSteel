@@ -1,0 +1,201 @@
+@namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
+@namespace html url("http://www.w3.org/1999/xhtml");
+toolbarbutton#alltabs-button {
+    -moz-binding: url("userChrome.xml#js");
+}
+
+/* namespace for HTML elements */
+@namespace xbl url("http://www.mozilla.org/xbl");
+/* namespace for XBL elements */
+
+
+
+
+/*  grouping    *//*
+#TabsToolBar {-moz-box-ordinal-group 1}
+#nav-bar {-moz-box-ordinal-group: 0}
+#PersonalToolbar {-moz-box-ordinal-group: 3}
+
+
+/**************************************************************/
+                /*  autohide TabsToolBar    */
+/**************************************************************/
+#nav-bar {
+    -moz-box-ordinal-group: 0 !important;
+    height: 100% !important;
+    z-index: 3 !important;
+}
+
+#TabsToolbar {
+    display: flex !important;
+    height: 30px !important;
+    width: -moz-available !important;
+    margin-bottom: -30px !important;
+    bottom: 0px !important;
+    transition: all 0.4s ease 0s !important;
+    opacity: 0 !important;
+    -moz-box-ordinal-group: 1 !important
+}
+
+#PersonalToolbar {-moz-box-ordinal-group: 3 !important;}
+
+#navigator-toolbox:hover>#TabsToolbar {
+    margin-top: 0px !important;
+    margin-bottom: 0px !important;
+    transition: all 0.4s ease 0s !important;
+    opacity: 1 !important;
+}
+/****************************************************************/
+
+
+
+
+
+
+/*  Urlbar stuff    */
+#urlbar, #urlbar-container {
+    font-family: monospace !important;
+    font-weight: bolder !important;
+    text-align: center !important;
+    color: #00ff95 !important;
+    font-size: 12px !important;
+    min-width: 1100px !important;
+}
+
+
+/****************************************************************/
+                    /*  Bottom Toolbar Mpds */
+/****************************************************************/
+#bottom-toolbar {
+    direction: rtl !important;
+}
+
+#bottom-toolbar toolbarbutton{
+    -moz-appearance: toolbarbutton !important;
+    --toolbarbutton-inner-padding: 0px !important;
+    direction: rtl !important;
+}
+
+#bottom-toolbar, #bottom-toolbar-vbox {
+    height: 34px !important;
+    margin: 0 12px !important;
+    background: linear-gradient(0deg, #008aff 10%,#1b1b1b 12%,#0d0d0d 47%,#0a0a0a 83%,#008aff 70%,#010101 100%) !important;
+-moz-box-ordinal-group: 10 !important;
+}
+
+/****************************************************************/
+                   /*  Statuspanel Mods    */
+/****************************************************************/
+#statuspanel {
+    position: fixed !important;
+    background: transparent !important;
+    color: #0a84ff !important;
+    border: none !important;
+    bottom: -6px !important;
+    left: 0px !important;
+    max-width: 60% !important;
+    margin-bottom: 6px !important;
+    padding-right: 5px !important;
+    padding-top: 0px !important;
+    transition: none !important;
+}
+
+/*  #main-window:not([sizemode="fullscreen"]) #statuspanel[inactive] #statuspanel-inner::before {
+      background: linear-gradient(to bottom, #000000 0%,#1c1e23 50%,#000000 100%) !important;
+      color: #2fd281 !important;
+      font-family: lucida handwriting  !important;
+      font-size: 16px !important;
+      font-weight: bold  !important;
+      height: 38px !important;
+      bottom: -55px !important;
+      left: 22px !important;
+      margin-bottom: -11px !important;
+      padding-bottom: 0px !important;
+      padding-top: 10px !important;
+      padding-left: 100px !important;
+      padding-right: 100px !important;
+      position: fixed !important;
+      content: "~ Tortious ~" !important;
+}
+*/
+
+#statuspanel[inactive] #statuspanel-label {
+      display: none !important;
+  }
+  
+  #statuspanel #statuspanel-inner {
+      background:transparent !important;
+      border: none !important;
+      height: 32px !important;
+      margin: 0px !important;
+  }
+  
+  
+  #statuspanel #statuspanel-label {
+      background: /*linear-gradient(to bottom, #000000 0%,#1c1e23 50%,#000000 100%) !important;*/ transparent !important;
+      border: none !important;
+      color: #2fd281 !important;
+      height: 44px !important;
+      padding-top: 10px !important;
+      margin-bottom: -7px !important;
+  }
+  
+
+
+
+
+
+
+
+/****************************************************************/
+                /*  Bookmark Toolbar Mods   */
+/****************************************************************/
+/* Hides bookmark text for all bookmarks displayed in a toolbar */
+.bookmark-item > .toolbarbutton-text  {
+  display: none !important;
+}
+
+/* Small visual tweak so it looks exactly the same as if the bookmark really had no text */
+.bookmark-item > .toolbarbutton-icon  {
+  margin-inline-end: 0px !important;
+}
+
+ 
+/*  Hamburger & Overflow Icons  */
+#PanelUI-menu-button {list-style-image: url("firefoxnewblue.png") !important;
+}
+#PanelUI-menu-button {transform: scale (1.5) !important;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
