@@ -1,0 +1,16 @@
+/*********  Coloring Main Toolbars     *********/
+#TabsToolbar {
+    background:linear-gradient(1.2deg, #020202 0%,#1a1a1a 30%,#010101 46%,#008aff 50%,#010101 53%,#1a1a1a 70%,#020202 100%) !important;
+}
+#nav-bar {
+    background: linear-gradient(75deg, #010101 0%,#1b1b1b 30%,#0d0d0d 46%,#010101 50%,#0a0a0a 53%,#1b1b1b 70%,#010101 100%) !important;
+}
+#PersonalToolbar {
+    background:linear-gradient(0deg, #020202 0%,#1a1a1a 30%,#2fd281 46%,#010101 50%,#2fd281 53%,#1a1a1a 70%,#020202 100%) !important;
+}
+#urlbar {
+    background: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+}
+/************** End Coloring ******************************/
