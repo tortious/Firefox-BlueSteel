@@ -1,0 +1,56 @@
+/*  This cover the removal of things from all over the browser */
+
+
+/********** Removal of Shit ***********/
+.toolbarbutton-1:hover {background: none !important;}
+#navigator-toolbox {padding-top: 0px !important;}
+#nav-bar {box-shadow: none !important;}
+#navigator-toolbox::after {border-bottom: 0px !important;}
+
+#alltabs-button {display: none}
+#tabbrowser-tabs[overflow] .scrollbutton-down {display: none}
+#tabbrowser-tabs[overflow] .scrollbutton-up {
+    visibility: hidden !important;
+}
+
+
+#back-button, #forward-button {display: none}
+#titlebar-max, #titlebar-min, #titlebar-close {display: none}
+.titlebar-placeholder {display: none}
+#pageActionButton, #pocket-button, 
+#identity-box, .urlbar-history-dropmarker {display: none}
+.tabs-newtab-button {display: none}
+#star-button {color: #2fd281 !important;}
+
+
+
+/*********      Tab-related Removals    **********/
+#TabsToolbar .close-icon, .tab-line, .tab-close-button, .tab-label-container,
+.tab-loading-burst, .tab-label {display: none}
+.tabbrowser-tab:after, .tabbrowser-tab:before {display: none !important;}
+.tabbrowser-tab[fadein] {
+    max-width: 36px !important;
+    min-width: 36px !important;}
+/*  centers tab icon image  */
+.tab-icon-image {margin-inline-end: 0px !important;
+    transform: scale(1,1)}
+.tab-content {padding: -6px !important;}
+
+/*  coloring active, inactive, hover tab etc    */
+.tab-icon-image {filter: grayscale(100%) !important;}
+.tabbrowser-tab[selected] .tab-icon-image {filter: none !important;}
+.tabbrowser-tab [selected] {background: none !important;}
+.tabbrowser-tab:hover:not([selected]) .tab-icon-image {
+    filter: none !important;
+    opacity: 1 !important;
+}
+/*DISABLE WHITE FLASH OF DEATH*/
+#browser vbox#appcontent tabbrowser,
+#content,
+#tabbrowser-tabpanels,
+browser[type=content-primary],
+browser[type=content]>html {
+    background: #101010 !important
+}
+
+    
