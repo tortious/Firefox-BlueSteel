@@ -1,12 +1,15 @@
 # FirefoxQ-BlueSteel
 My current firefox setup on Manjaro KDE Plasma, as of Thanksgiving 2018. Includes .css/as.css/.js/uc.js/xml
 
+## Overview
+
 My take on firefox quantum. I am the first to admit that not all of the modifications/implimentations I have made are the most efficient or productive. However, they are nice and gaudy and bright - What can I say? I operate out of the id. 
 
 Anyway, this repository is made for personal use and I am cool with/encourage any adaptations/bastardizations of it. Included with the css is a sereis of files that allow for jscrpt capabilitites. They will be set within their own folder. Otherwise, files will be primarily separated by css/as.css vs. js/uc.js. 
 
 Also, don't forget the bindings.xml doc as well. userChrome.css will dictate some rules in the beginning of the file that grant the as.css and uc.js capabilities. Any docs involving quantum that are not included here will be located in the 2 repositories re firefox. 
 
+## Features
 
 In sum, the overall look and feel of my entire Firefos Quantum Setup is as folows:
 
@@ -20,9 +23,15 @@ In sum, the overall look and feel of my entire Firefos Quantum Setup is as folow
 - There is an issue with the context menu and [I think] the dialog menus. They seem to be transparent. I think this is a mistake on my part of the Win10.as.css file located in this repository. 
     - NOTE: If anyone can help/give me advice on how to configure the context menu so that when you hover it and/or when you use the keyboard to selected an item (but before you enable it/push enter), instead of a background highlight and text change, only the color of the text changes (e.g. minty green, to purple when selected/hovered). Thanks in advance!
     
-    
+
+## Wrapping Up
 Well, I think that about sums it up. If it hasn't been readily apprent already, I am an absolute novie when it comes to coding, of any variety. I began learning right when firefox quantum came out, and my time on r/firefoxcss, as well as countless other websites when looking for those tough to find answers (e.g. stackoverflow, superuser, etc) has taught me literally everything I know. 
 
 As for any JS stuff, I can't write it for shit, but I do get the general idea of how it works just from using it alongside the css files. That, and messing around with Foobar2000, but that is a whole other can of worms. 
 
 Hope you guys like it. Any and all feedback/criticism is not only welcomed, but encouraged. 
+
+# Important
+This is a work in progress. In no way do I guarantee that any of these modifications will work or not break you browser. I broke mine constantly fiddling around with it over the years - it is not the end of the world. If something does not work or is missing, as stated before, of course let me know. 
+
+I just want to avoid receiving messages that merely seek to complain, and do not address specific problems that can be remedied. 
